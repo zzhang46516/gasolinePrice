@@ -23,8 +23,6 @@ with pipenv:
 with pip:
 
     pip install -r requirements.txt
-    
-    w
 
 
 
@@ -42,8 +40,9 @@ Installing
     Windows:
         pip install pypiwin32
         
-        install Twisted from https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted
+        download Twisted from https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted to root directory
             in filename cp**, ** is your python version
+        pip install Twisted*(downloaded Twisted filename)
         
         in folder my_app:
             run python manage.py migrate
