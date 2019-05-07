@@ -23,18 +23,35 @@ with pipenv:
 with pip:
 
     pip install -r requirements.txt
+    
+    w
 
 
 
 Installing
 
-    create database "rgp"
-    in folder my_app:
-        run python manage.py migrate
-    in folder RegularGasolinePrices:
-        run scrapy crawl gasolineprices
-    back to forlder my_app:
-        run python manage.py runserver
+    MacOS:
+        create database "rgp"
+        in folder my_app:
+            run python manage.py migrate
+        in folder RegularGasolinePrices:
+            run scrapy crawl gasolineprices
+        back to forlder my_app:
+            run python manage.py runserver
+    
+    Windows:
+        pip install pypiwin32
+        
+        install Twisted from https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted
+            in filename cp**, ** is your python version
+        
+        in folder my_app:
+            run python manage.py migrate
+        in folder RegularGasolinePrices:
+            run scrapy crawl gasolineprices
+        back to forlder my_app:
+            run python manage.py runserver
+        
 
 Next:
     
